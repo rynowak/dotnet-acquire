@@ -3,5 +3,9 @@
     <RestoreSources Condition="'$(RestoreSources)'==''">
     https://api.nuget.org/v3/index.json;
     </RestoreSources>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign>true</PublicSign>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)\build\Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 </Project>
